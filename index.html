@@ -133,66 +133,40 @@
         </div>
     </section>
 
-    <section class="w-full bg-white text-black flex flex-col justify-start px-8 md:px-24 pt-32 pb-[30vh]">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-24 justify-center items-start max-w-8xl mx-auto">
-            
-            <!-- Analyze Card -->
-            <div class="flex flex-col items-start">
-                <div class="w-full h-[65vh] bg-gray-100 rounded-3xl overflow-hidden mb-10 shadow-md">
-                    <img src="assets/imgs/anaylze.jpg"
-                        alt="Analyze Visual"
-                        class="w-full h-full object-cover">
-                </div>
-                <h3 class="text-3xl font-normal mb-3 tracking-tight">Analyze</h3>
-                <p class="text-gray-500 leading-relaxed max-w-md">
-                    Scale Your Mindset dives into your data, uncovers insights, and explains performance in real-time — helping teams make smarter decisions faster.
-                </p>
-            </div>
 
-            <!-- Execute Card -->
-            <div class="flex flex-col items-start">
-                <div class="w-full h-[65vh] bg-gray-100 rounded-3xl overflow-hidden mb-10 shadow-md">
-                    <img src="assets/imgs/execute.jpg"
-                        alt="Execute Visual"
-                        class="w-full h-full object-cover">
-                </div>
-                <h3 class="text-3xl font-normal mb-3 tracking-tight">Execute</h3>
-                <p class="text-gray-500 leading-relaxed max-w-md">
-                    Scale Your Mindset automates execution across platforms — optimizing systems, deploying updates, and maintaining precision without human delay.
-                </p>
-            </div>
-        </div>
-    </section>
 
     <!-- New Calendly Appointment Section -->
-    <section id="calendly-section" class="min-h-screen bg-black text-white flex flex-col justify-center items-center px-8 py-20">
-        <div class="max-w-5xl w-full text-center">
-            <p class="uppercase text-gray-400 text-xs tracking-widest mb-2">
-                LET'S CONNECT
-            </p>
+<section id="calendly-section" class="min-h-screen bg-black text-white flex flex-col justify-center items-center px-8 py-20">
+  <div class="max-w-5xl w-full text-center">
+    <p class="uppercase text-gray-400 text-xs tracking-widest mb-2">
+      LET'S CONNECT
+    </p>
 
-            <h2 class="text-3xl md:text-5xl font-semibold mb-4">
-                Schedule Your <span class="italic font-light">Discovery Call</span>
-            </h2>
+    <h2 class="text-3xl md:text-5xl font-semibold mb-4">
+      Schedule Your <span class="italic font-light">Discovery Call</span>
+    </h2>
 
-            <p class="text-gray-400 max-w-2xl mx-auto text-base mb-12">
-                Ready to transform your business with AI-powered solutions? Book a consultation with our experts to explore how Scale Your Mindset can drive innovation and growth for your organization.
-            </p>
+    <p class="text-gray-400 max-w-2xl mx-auto text-base mb-12">
+      Ready to transform your business with AI-powered solutions? Book a consultation with our experts to explore how Scale Your Mindset can drive innovation and growth for your organization.
+    </p>
 
-            <!-- Calendly Integration -->
-            <div class="calendly-container rounded-3xl overflow-hidden shadow-2xl">
-                <div class="calendly-overlay">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-4">Book Your Strategy Session</h3>
-                    <p class="text-lg max-w-lg mb-6">Connect with our team to discuss your goals and discover how our AI solutions can transform your business operations.</p>
-                    <a href="#" class="calendly-button">Schedule Now</a>
-                </div>
-                <!-- Placeholder for Calendly embed -->
-                <div style="height: 100%; background: #1a202c; display: flex; justify-content: center; align-items: center;">
-                    <p class="text-gray-400">Calendly booking widget would be embedded here</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Calendly Integration -->
+    <div class="calendly-container rounded-3xl overflow-hidden shadow-2xl w-full bg-gray-900 p-6">
+      <!-- Calendly inline widget begin -->
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/scaleyourmindset-proton/30min"
+        style="min-width: 320px; height: 700px;">
+      </div>
+      <script
+        type="text/javascript"
+        src="https://assets.calendly.com/assets/external/widget.js"
+        async>
+      </script>
+      <!-- Calendly inline widget end -->
+    </div>
+  </div>
+</section>
 
 
     <!-- Reviews Section -->

@@ -59,3 +59,73 @@ p {
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
+
+
+      .calendly-container {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  .calendly-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    z-index: 10;
+  }
+
+  .calendly-button {
+    background: #4FD1C5;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .calendly-button:hover {
+    background: #38B2AC;
+    transform: translateY(-2px);
+  }
+
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .calendly-container {
+      min-height: 500px;
+    }
+
+    .calendly-overlay {
+      padding: 1.5rem;
+    }
+
+    .calendly-button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .calendly-container {
+      min-height: 450px;
+    }
+
+    .calendly-overlay h3 {
+      font-size: 1.5rem;
+    }
+
+    .calendly-overlay p {
+      font-size: 0.95rem;
+    }
+  }

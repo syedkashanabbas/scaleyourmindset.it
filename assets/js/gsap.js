@@ -2,12 +2,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const heroCanvas = document.getElementById("hero-bg");
 
-// Create a timeline for the hero scroll scene
 const heroTimeline = gsap.timeline({
   scrollTrigger: {
     trigger: "#hero-section",
     start: "top top",
-    end: "bottom+=200% top", // controls how long the hero stays pinned
+    end: "bottom+=100% top",  // was 200%, now half
     scrub: true,
     pin: true,
     anticipatePin: 1,
@@ -20,25 +19,12 @@ heroTimeline.to(heroCanvas, {
   ease: "power2.inOut",
 }, 0);
 
-// Fade out hero text towards the end
+// Fade out hero text sooner now
 heroTimeline.to("#hero-section", {
   opacity: 0,
   y: -100,
   ease: "power2.out",
-}, 0.7);
-
-// When hero is done, reveal next section
-// gsap.from("#second-section", {
-//   opacity: 0,
-//   y: 200,
-//   duration: 1.2,
-//   ease: "power3.out",
-//   scrollTrigger: {
-//     trigger: "#second-section",
-//     start: "top 80%",
-//   },
-// });
-
+}, 0.5); // fade-out starts earlier to match shorter scroll
 
 // Helper: Typing effect
 function typeText(element, text, delay = 0, speed = 30) {

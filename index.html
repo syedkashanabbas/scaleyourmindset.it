@@ -44,19 +44,36 @@
     </header>
 
     <canvas id="hero-bg"></canvas>
-<section id="hero-section" class="min-h-screen flex items-end justify-start px-10 md:px-24 pb-20 relative z-10">
-    <div class="max-w-8xl text-left">
+<section id="hero-section" class="relative min-h-screen flex items-end justify-start px-10 md:px-24 pb-20 overflow-hidden">
 
-        <p class="uppercase text-gray-400 text-xs tracking-widest mb-4">
+    <!-- Background Video -->
+    <video 
+        src="assets/imgs/hero.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute inset-0 w-full h-full object-cover z-0">
+    </video>
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-8xl text-left">
+
+        <p class="uppercase text-gray-300 text-xs tracking-widest mb-4">
             La Community che ti Connette alla Miglior AI per i Mercati Finanziari
         </p>
 
         <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4">
             Scale Your Mindset<br />
-            <span class="text-white/80">Accesso, formazione e supporto nell’uso della tecnologia AI più avanzata.</span>
+            <span class="text-white/80">
+                Accesso, formazione e supporto nell’uso della tecnologia AI più avanzata.
+            </span>
         </h1>
 
-        <p class="text-gray-400 text-base mt-2 max-w-md">
+        <p class="text-gray-300 text-base mt-2 max-w-md">
             Scale Your Mindset non sviluppa direttamente la tecnologia, ti offre accesso, onboarding, supporto e formazione per utilizzare una delle AI più evolute disponibili oggi per analisi e automazione sui mercati finanziari. Tu scegli il broker, i tuoi fondi restano sempre sotto il tuo controllo, noi ti guidiamo nel suo utilizzo.
         </p>
 
@@ -68,7 +85,9 @@
         </a>
 
     </div>
+
 </section>
+
 
 
 

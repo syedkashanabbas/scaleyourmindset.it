@@ -2,29 +2,29 @@ gsap.registerPlugin(ScrollTrigger);
 
 const heroCanvas = document.getElementById("hero-bg");
 
-const heroTimeline = gsap.timeline({
-  scrollTrigger: {
-    trigger: "#hero-section",
-    start: "top top",
-    end: "bottom+=100% top",  // was 200%, now half
-    scrub: true,
-    pin: true,
-    anticipatePin: 1,
-  },
-});
+// const heroTimeline = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: "#hero-section",
+//     start: "top top",
+//     end: "bottom+=100% top",  // was 200%, now half
+//     scrub: true,
+//     pin: true,
+//     anticipatePin: 1,
+//   },
+// });
 
 // Zoom in the canvas smoothly
-heroTimeline.to(heroCanvas, {
-  scale: 2.5,
-  ease: "power2.inOut",
-}, 0);
+// heroTimeline.to(heroCanvas, {
+//   scale: 2.5,
+//   ease: "power2.inOut",
+// }, 0);
 
 // Fade out hero text sooner now
-heroTimeline.to("#hero-section", {
-  opacity: 0,
-  y: -100,
-  ease: "power2.out",
-}, 0.5); // fade-out starts earlier to match shorter scroll
+// heroTimeline.to("#hero-section", {
+//   opacity: 0,
+//  //     y: -100,
+  //ease: "power2.out",
+//}, 0.5); // fade-out starts earlier to match shorter scroll
 
 // Helper: Typing effect
 function typeText(element, text, delay = 0, speed = 30) {

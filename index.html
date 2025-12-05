@@ -44,83 +44,47 @@
     </header>
 
     <canvas id="hero-bg"></canvas>
-<section id="hero-section" class="relative min-h-screen flex items-end justify-start px-10 md:px-24 pb-20 overflow-hidden">
+<section id="hero-section" class="relative min-h-screen w-full bg-black flex flex-col items-center justify-start px-6 sm:px-10 md:px-20 pt-32 pb-20 overflow-hidden">
 
-    <!-- Background Video -->
-    <video 
-        src="assets/imgs/hero.mp4"
+  <!-- Content Wrapper -->
+  <div class="relative z-10 flex flex-col items-center text-center max-w-4xl">
+
+    <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight tracking-tight ">
+      Vendi il tuo immobile,<br /> senza pensieri
+    </h1>
+    
+
+    <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl mt-2 max-w-2xl ">
+      Connettiamo proprietari come te con acquirenti seri, pronti e verificati.
+      Che tu abbia una casa, un appartamento o un terreno, ti aiutiamo a ottenere
+      il miglior prezzo di mercato in tempi rapidi e con la massima sicurezza.
+    </p>
+
+    <p class="text-white text-xs sm:text-sm md:text-base mt-4 max-w-md ">
+      Scopri subito quanto vale la tua proprietà, è gratuito.
+    </p>
+
+  </div>
+
+  <!-- Video Section -->
+  <div class="relative w-[90%] max-w-7xl mt-16 z-10">
+    <div class="relative w-full aspect-video rounded-xl shadow-2xl overflow-hidden">
+      <video 
+        src="assets/imgs/interview.mp4"
         autoplay
         muted
         loop
         playsinline
-        class="absolute inset-0 w-full h-full object-cover z-0">
-    </video>
-
-    <!-- Dark Overlay -->
-    <div class="absolute inset-0 bg-black/40 z-0"></div>
-
-    <!-- Content -->
-    <div class="relative z-10 max-w-8xl text-left">
-
-        <p class="uppercase text-gray-300 text-xs tracking-widest mb-4">
-            La Community che ti Connette alla Miglior AI per i Mercati Finanziari
-        </p>
-
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4">
-            Scale Your Mindset<br />
-            <span class="text-white/80">
-                Accesso, formazione e supporto nell’uso della tecnologia AI più avanzata.
-            </span>
-        </h1>
-
-        <p class="text-gray-300 text-base mt-2 max-w-md">
-            Scale Your Mindset non sviluppa direttamente la tecnologia, ti offre accesso, onboarding, supporto e formazione per utilizzare una delle AI più evolute disponibili oggi per analisi e automazione sui mercati finanziari. Tu scegli il broker, i tuoi fondi restano sempre sotto il tuo controllo, noi ti guidiamo nel suo utilizzo.
-        </p>
-
-        <a href="#calendly-section" class="mt-8 inline-flex items-center gap-3 bg-white text-black px-7 py-3 rounded-full text-sm font-semibold tracking-wide hover:bg-gray-100 transition-all duration-300 group">
-            Richiedi la tua AI Market Assessment
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-        </a>
-
+        class="w-full h-full object-cover">
+      </video>
     </div>
+  </div>
 
 </section>
 
 
 
 
-<section id="second-section" class="bg-white flex flex-col justify-center items-center text-center px-8 pt-20 pb-10">
-    <p class="uppercase text-gray-500 text-xs tracking-widest mb-2">
-        AI APPLICATA AI MERCATI FINANZIARI
-    </p>
-
-    <h2 class="text-3xl md:text-5xl font-semibold text-black mb-4">
-        La nuova frontiera dell’AI per il <span class="italic font-light">Forex</span>.
-    </h2>
-
-    <p class="text-gray-700 max-w-2xl text-sm md:text-base mb-8">
-        Sono Alessandro, esperto di Intelligenza Artificiale applicata ai mercati valutari,
-        con una specializzazione verticale su XAUUSD. Aiuto trader, investitori e aziende a
-        integrare tecnologia AI nelle loro operazioni senza toccare i loro capitali. Il denaro
-        rimane sempre nelle tue tasche, la tecnologia la fornisco io.
-    </p>
-
-    <!-- Video Container -->
-    <div class="relative w-full max-w-7xl mx-auto aspect-[16/9] rounded-[2rem] overflow-hidden mb-8 px-4 md:px-0">
-        <video 
-            class="w-full h-full object-cover rounded-[2rem]" 
-            autoplay 
-            muted 
-            loop 
-            playsinline 
-            preload="metadata">
-            <source src="assets/imgs/interview.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-</section>
 
 <section class="bg-white text-black py-14 px-6 md:px-24">
   <div class="max-w-6xl mx-auto text-center mb-14">
